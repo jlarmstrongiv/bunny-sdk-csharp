@@ -13,4 +13,4 @@
 - `git add -A`
 - `git commit -m "message"`
 - `git push`
-- `dotnet nuget push bin/Release/BunnyLauncher.BunnySdk.0.0.0.nupkg --api-key API_KEY`
+- `dotnet nuget push bin/Release/BunnyLauncher.BunnySdk.0.0.0.nupkg --source https://api.nuget.org/v3/index.json --api-key API_KEY`
