@@ -7,14 +7,14 @@
     <Nullable>enable</Nullable>
     <DefaultItemExcludes>$(DefaultItemExcludes);Test.cs</DefaultItemExcludes>
     <PackageId>BunnyLauncher.BunnySdk</PackageId>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <MinVerTagPrefix>v</MinVerTagPrefix>
     <Authors>john_l_armstrong_iv</Authors>
     <Summary>C# SDK for bunny.net 🐰</Summary>
     <Description>C# SDK for bunny.net 🐰</Description>
     <!-- <PackageIcon>icon.png</PackageIcon> -->
     <PackageTags>BunnyCDN;bunny.net;bunny;cdn;bunny-launcher;sdk;api</PackageTags>
-    <PackageProjectUrl>https://bunny-launcher.com/bunny-sdk/csharp/</PackageProjectUrl>
+    <PackageProjectUrl>https://bunny-launcher.com/bunny-sdk/langauges/csharp/</PackageProjectUrl>
     <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/jlarmstrongiv/bunny-sdk-csharp</RepositoryUrl>

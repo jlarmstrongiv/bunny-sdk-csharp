@@ -4,8 +4,6 @@
 
 ## Installation
 
-Add the following dependencies to your `.csproj` file:
-
 ```shell
 dotnet add package BunnyLauncher.BunnySdk
 ```
