@@ -1,6 +1,6 @@
 # bunny-sdk
 
-[![NuGet Version](https://img.shields.io/nuget/v/BunnyLauncher.BunnySdk)](https://www.nuget.org/packages/BunnyLauncher.BunnySdk)
+[![NuGet Version](https://img.shields.io/nuget/v/BunnyLauncher.BunnySdk?color=blue)](https://www.nuget.org/packages/BunnyLauncher.BunnySdk)
 
 ## Installation
 
