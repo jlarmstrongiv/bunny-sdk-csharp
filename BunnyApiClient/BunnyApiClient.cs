@@ -10,6 +10,7 @@ using BunnyApiClient.Purge;
 using BunnyApiClient.Region;
 using BunnyApiClient.Statistics;
 using BunnyApiClient.Storagezone;
+using BunnyApiClient.User;
 using BunnyApiClient.Videolibrary;
 using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions;
@@ -19,7 +20,6 @@ using Microsoft.Kiota.Serialization.Multipart;
 using Microsoft.Kiota.Serialization.Text;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 namespace BunnyApiClient
@@ -27,7 +27,8 @@ namespace BunnyApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    public class BunnyApiClient : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class BunnyApiClient : BaseRequestBuilder
     {
         /// <summary>The abusecase property</summary>
         public global::BunnyApiClient.Abusecase.AbusecaseRequestBuilder Abusecase
@@ -84,13 +85,18 @@ namespace BunnyApiClient
         {
             get => new global::BunnyApiClient.Storagezone.StoragezoneRequestBuilder(PathParameters, RequestAdapter);
         }
+        /// <summary>The user property</summary>
+        public global::BunnyApiClient.User.UserRequestBuilder User
+        {
+            get => new global::BunnyApiClient.User.UserRequestBuilder(PathParameters, RequestAdapter);
+        }
         /// <summary>The videolibrary property</summary>
         public global::BunnyApiClient.Videolibrary.VideolibraryRequestBuilder Videolibrary
         {
             get => new global::BunnyApiClient.Videolibrary.VideolibraryRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.BunnyApiClient"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.BunnyApiClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
         public BunnyApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())

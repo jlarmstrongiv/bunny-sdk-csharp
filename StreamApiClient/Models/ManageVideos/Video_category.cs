@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using System;
 namespace StreamApiClient.Models.ManageVideos
 {
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
     /// <summary>The automatically detected category of the video</summary>
     public enum Video_category
     {

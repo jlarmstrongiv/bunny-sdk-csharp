@@ -2,11 +2,11 @@
 using BunnyApiClient.Abusecase.Item.Check;
 using BunnyApiClient.Abusecase.Item.Resolve;
 using BunnyApiClient.Models.AbuseCases;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
@@ -15,7 +15,8 @@ namespace BunnyApiClient.Abusecase.Item
     /// <summary>
     /// Builds and executes requests for operations under \abusecase\{id}
     /// </summary>
-    public class AbusecaseItemRequestBuilder : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class AbusecaseItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The check property</summary>
         public global::BunnyApiClient.Abusecase.Item.Check.CheckRequestBuilder Check
@@ -28,7 +29,7 @@ namespace BunnyApiClient.Abusecase.Item
             get => new global::BunnyApiClient.Abusecase.Item.Resolve.ResolveRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -36,7 +37,7 @@ namespace BunnyApiClient.Abusecase.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -46,7 +47,7 @@ namespace BunnyApiClient.Abusecase.Item
         /// <summary>
         /// [GetAbuseCase API Docs](https://docs.bunny.net/reference/abusecasepublic_getabusecase2)
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Models.AbuseCases.AbuseCase"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Models.AbuseCases.AbuseCase"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -83,7 +84,7 @@ namespace BunnyApiClient.Abusecase.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         public global::BunnyApiClient.Abusecase.Item.AbusecaseItemRequestBuilder WithUrl(string rawUrl)
         {

@@ -8,7 +8,6 @@ using Microsoft.Kiota.Serialization.Multipart;
 using Microsoft.Kiota.Serialization.Text;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 namespace EdgeStorageApiClient
@@ -16,11 +15,12 @@ namespace EdgeStorageApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    public class EdgeStorageApiClient : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class EdgeStorageApiClient : BaseRequestBuilder
     {
         /// <summary>Gets an item from the EdgeStorageApiClient.item collection</summary>
         /// <param name="position">the name of your storage zone where you are connecting to.</param>
-        /// <returns>A <see cref="EdgeStorageApiClient.Item.WithStorageZoneNameItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::EdgeStorageApiClient.Item.WithStorageZoneNameItemRequestBuilder"/></returns>
         public global::EdgeStorageApiClient.Item.WithStorageZoneNameItemRequestBuilder this[string position]
         {
             get
@@ -31,7 +31,7 @@ namespace EdgeStorageApiClient
             }
         }
         /// <summary>
-        /// Instantiates a new <see cref="EdgeStorageApiClient.EdgeStorageApiClient"/> and sets the default values.
+        /// Instantiates a new <see cref="global::EdgeStorageApiClient.EdgeStorageApiClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
         public EdgeStorageApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())

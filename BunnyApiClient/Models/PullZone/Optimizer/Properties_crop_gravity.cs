@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using System;
 namespace BunnyApiClient.Models.PullZone.Optimizer
 {
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
     #pragma warning disable CS1591
     public enum Properties_crop_gravity
     #pragma warning restore CS1591

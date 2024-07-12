@@ -1,8 +1,8 @@
 {
-  "descriptionHash": "9CD47A4B75584628700817306940575B23B5EE34EE71EF5783B8B36F2D76272F4A53727D0E22BC2BACD29D578B20883C2392DDE9C4F76163BD313550B13D1CFA",
+  "descriptionHash": "B5E73491B7A6051EA1161DC6A2A82C6DCF23F6C8AA0CFB53B5D53C12F30EFEB103A91377CD2F1B6694D26EDD558D869DC0DA294D885FF5D1740E10BC79B136F6",
   "descriptionLocation": "../../../../tsp-output/@typespec/openapi3/openapi.BunnyApi.yaml",
   "lockFileVersion": "1.0.0",
-  "kiotaVersion": "1.15.0",
+  "kiotaVersion": "1.16.0",
   "clientClassName": "BunnyApiClient",
   "clientNamespaceName": "BunnyApiClient",
   "language": "CSharp",

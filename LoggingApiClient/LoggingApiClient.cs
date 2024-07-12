@@ -8,7 +8,6 @@ using Microsoft.Kiota.Serialization.Multipart;
 using Microsoft.Kiota.Serialization.Text;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 namespace LoggingApiClient
@@ -16,10 +15,11 @@ namespace LoggingApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    public class LoggingApiClient : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class LoggingApiClient : BaseRequestBuilder
     {
         /// <summary>
-        /// Instantiates a new <see cref="LoggingApiClient.LoggingApiClient"/> and sets the default values.
+        /// Instantiates a new <see cref="global::LoggingApiClient.LoggingApiClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
         public LoggingApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
@@ -40,7 +40,7 @@ namespace LoggingApiClient
         /// <summary>
         /// Builds and executes requests for operations under \{mm}-{dd}-{yy}
         /// </summary>
-        /// <returns>A <see cref="LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder"/></returns>
         /// <param name="dd">The path parameter: dd</param>
         /// <param name="mm">The path parameter: mm</param>
         /// <param name="yy">The path parameter: yy</param>

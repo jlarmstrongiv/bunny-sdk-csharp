@@ -3,6 +3,7 @@ using System.Runtime.Serialization;
 using System;
 namespace LoggingApiClient.WithMmWithDdWithYy.WithPullZoneIdLog
 {
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
     #pragma warning disable CS1591
     public enum GetOrderQueryParameterType
     #pragma warning restore CS1591

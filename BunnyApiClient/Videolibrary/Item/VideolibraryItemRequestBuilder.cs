@@ -6,11 +6,11 @@ using BunnyApiClient.Videolibrary.Item.RemoveAllowedReferrer;
 using BunnyApiClient.Videolibrary.Item.RemoveBlockedReferrer;
 using BunnyApiClient.Videolibrary.Item.ResetApiKey;
 using BunnyApiClient.Videolibrary.Item.Watermark;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
@@ -19,7 +19,8 @@ namespace BunnyApiClient.Videolibrary.Item
     /// <summary>
     /// Builds and executes requests for operations under \videolibrary\{id}
     /// </summary>
-    public class VideolibraryItemRequestBuilder : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class VideolibraryItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The addAllowedReferrer property</summary>
         public global::BunnyApiClient.Videolibrary.Item.AddAllowedReferrer.AddAllowedReferrerRequestBuilder AddAllowedReferrer
@@ -52,7 +53,7 @@ namespace BunnyApiClient.Videolibrary.Item
             get => new global::BunnyApiClient.Videolibrary.Item.Watermark.WatermarkRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -60,7 +61,7 @@ namespace BunnyApiClient.Videolibrary.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -87,7 +88,7 @@ namespace BunnyApiClient.Videolibrary.Item
         /// <summary>
         /// [GetVideoLibrary API Docs](https://docs.bunny.net/reference/videolibrarypublic_index2)
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Models.StreamVideoLibrary.VideoLibrary"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Models.StreamVideoLibrary.VideoLibrary"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -105,7 +106,7 @@ namespace BunnyApiClient.Videolibrary.Item
         /// <summary>
         /// [UpdateVideoLibrary API Docs](https://docs.bunny.net/reference/videolibrarypublic_update)
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Models.StreamVideoLibrary.VideoLibrary"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Models.StreamVideoLibrary.VideoLibrary"/></returns>
         /// <param name="body">The template for adding optional properties.</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -184,7 +185,7 @@ namespace BunnyApiClient.Videolibrary.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         public global::BunnyApiClient.Videolibrary.Item.VideolibraryItemRequestBuilder WithUrl(string rawUrl)
         {
@@ -193,7 +194,8 @@ namespace BunnyApiClient.Videolibrary.Item
         /// <summary>
         /// [GetVideoLibrary API Docs](https://docs.bunny.net/reference/videolibrarypublic_index2)
         /// </summary>
-        public class VideolibraryItemRequestBuilderGetQueryParameters 
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        public partial class VideolibraryItemRequestBuilderGetQueryParameters 
         {
             [QueryParameter("includeAccessKey")]
             public bool? IncludeAccessKey { get; set; }

@@ -18,11 +18,11 @@ using BunnyApiClient.Pullzone.Item.ResetSecurityKey;
 using BunnyApiClient.Pullzone.Item.Safehop;
 using BunnyApiClient.Pullzone.Item.SetForceSSL;
 using BunnyApiClient.Pullzone.Item.Waf;
+using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using System;
@@ -31,7 +31,8 @@ namespace BunnyApiClient.Pullzone.Item
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}
     /// </summary>
-    public class ItemRequestBuilder : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The addAllowedReferrer property</summary>
         public global::BunnyApiClient.Pullzone.Item.AddAllowedReferrer.AddAllowedReferrerRequestBuilder AddAllowedReferrer
@@ -124,7 +125,7 @@ namespace BunnyApiClient.Pullzone.Item
             get => new global::BunnyApiClient.Pullzone.Item.Waf.WafRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -132,7 +133,7 @@ namespace BunnyApiClient.Pullzone.Item
         {
         }
         /// <summary>
-        /// Instantiates a new <see cref="BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/> and sets the default values.
+        /// Instantiates a new <see cref="global::BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/> and sets the default values.
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
@@ -159,7 +160,7 @@ namespace BunnyApiClient.Pullzone.Item
         /// <summary>
         /// [GetPullZone API Docs](https://docs.bunny.net/reference/pullzonepublic_index2)
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Models.PullZone.PullZone"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Models.PullZone.PullZone"/></returns>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
@@ -177,7 +178,7 @@ namespace BunnyApiClient.Pullzone.Item
         /// <summary>
         /// [UpdatePullZone API Docs](https://docs.bunny.net/reference/pullzonepublic_updatepullzone)
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Models.PullZone.PullZone"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Models.PullZone.PullZone"/></returns>
         /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
@@ -256,7 +257,7 @@ namespace BunnyApiClient.Pullzone.Item
         /// <summary>
         /// Returns a request builder with the provided arbitrary URL. Using this method means any other path or query parameters are ignored.
         /// </summary>
-        /// <returns>A <see cref="BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/></returns>
+        /// <returns>A <see cref="global::BunnyApiClient.Pullzone.Item.ItemRequestBuilder"/></returns>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         public global::BunnyApiClient.Pullzone.Item.ItemRequestBuilder WithUrl(string rawUrl)
         {
@@ -265,7 +266,8 @@ namespace BunnyApiClient.Pullzone.Item
         /// <summary>
         /// [GetPullZone API Docs](https://docs.bunny.net/reference/pullzonepublic_index2)
         /// </summary>
-        public class ItemRequestBuilderGetQueryParameters 
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        public partial class ItemRequestBuilderGetQueryParameters 
         {
             /// <summary>Determines if the result hostnames should contain the SSL certificate</summary>
             [QueryParameter("includeCertificate")]

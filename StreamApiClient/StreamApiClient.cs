@@ -9,7 +9,6 @@ using StreamApiClient.Library;
 using StreamApiClient.OEmbed;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 using System;
 namespace StreamApiClient
@@ -17,7 +16,8 @@ namespace StreamApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    public class StreamApiClient : BaseRequestBuilder
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    public partial class StreamApiClient : BaseRequestBuilder
     {
         /// <summary>The library property</summary>
         public global::StreamApiClient.Library.LibraryRequestBuilder Library
@@ -30,7 +30,7 @@ namespace StreamApiClient
             get => new global::StreamApiClient.OEmbed.OEmbedRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="StreamApiClient.StreamApiClient"/> and sets the default values.
+        /// Instantiates a new <see cref="global::StreamApiClient.StreamApiClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
         public StreamApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
