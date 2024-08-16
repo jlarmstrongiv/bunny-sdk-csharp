@@ -12,7 +12,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}\waf\statistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class StatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -20,7 +20,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/waf/statistics{?dateFrom*,dateTo*,hourly*}", pathParameters)
+        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/waf/statistics{?dateFrom,dateTo,hourly}", pathParameters)
         {
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/waf/statistics{?dateFrom*,dateTo*,hourly*}", rawUrl)
+        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/waf/statistics{?dateFrom,dateTo,hourly}", rawUrl)
         {
         }
         /// <returns>A <see cref="global::BunnyApiClient.Pullzone.Item.Waf.Statistics.StatisticsGetResponse"/></returns>
@@ -71,7 +71,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
         {
             return new global::BunnyApiClient.Pullzone.Item.Waf.Statistics.StatisticsRequestBuilder(rawUrl, RequestAdapter);
         }
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         #pragma warning disable CS1591
         public partial class StatisticsRequestBuilderGetQueryParameters 
         #pragma warning restore CS1591

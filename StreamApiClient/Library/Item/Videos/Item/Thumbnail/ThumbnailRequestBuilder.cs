@@ -13,7 +13,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Thumbnail
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\videos\{videoId}\thumbnail
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class ThumbnailRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -21,7 +21,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Thumbnail
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public ThumbnailRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/thumbnail{?thumbnailUrl*}", pathParameters)
+        public ThumbnailRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/thumbnail{?thumbnailUrl}", pathParameters)
         {
         }
         /// <summary>
@@ -29,7 +29,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Thumbnail
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public ThumbnailRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/thumbnail{?thumbnailUrl*}", rawUrl)
+        public ThumbnailRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/thumbnail{?thumbnailUrl}", rawUrl)
         {
         }
         /// <summary>
@@ -86,7 +86,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Thumbnail
         /// <summary>
         /// [SetThumbnail API Docs](https://docs.bunny.net/reference/video_setthumbnail)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class ThumbnailRequestBuilderPostQueryParameters 
         {
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

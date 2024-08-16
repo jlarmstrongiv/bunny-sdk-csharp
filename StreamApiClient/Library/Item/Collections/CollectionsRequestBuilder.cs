@@ -14,7 +14,7 @@ namespace StreamApiClient.Library.Item.Collections
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\collections
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class CollectionsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>Gets an item from the StreamApiClient.library.item.collections.item collection</summary>
@@ -34,7 +34,7 @@ namespace StreamApiClient.Library.Item.Collections
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public CollectionsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/collections?includeThumbnails={includeThumbnails}&itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&search*}", pathParameters)
+        public CollectionsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/collections?includeThumbnails={includeThumbnails}&itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&search}", pathParameters)
         {
         }
         /// <summary>
@@ -42,7 +42,7 @@ namespace StreamApiClient.Library.Item.Collections
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public CollectionsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/collections?includeThumbnails={includeThumbnails}&itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&search*}", rawUrl)
+        public CollectionsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/collections?includeThumbnails={includeThumbnails}&itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&search}", rawUrl)
         {
         }
         /// <summary>
@@ -136,7 +136,7 @@ namespace StreamApiClient.Library.Item.Collections
         /// <summary>
         /// [GetCollectionList API Docs](https://docs.bunny.net/reference/collection_list)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class CollectionsRequestBuilderGetQueryParameters 
         {
             [QueryParameter("includeThumbnails")]

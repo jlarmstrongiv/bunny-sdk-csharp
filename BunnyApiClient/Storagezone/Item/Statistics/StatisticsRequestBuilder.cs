@@ -12,7 +12,7 @@ namespace BunnyApiClient.Storagezone.Item.Statistics
     /// <summary>
     /// Builds and executes requests for operations under \storagezone\{id}\statistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class StatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -20,7 +20,7 @@ namespace BunnyApiClient.Storagezone.Item.Statistics
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone/{id}/statistics{?dateFrom*,dateTo*}", pathParameters)
+        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone/{id}/statistics{?dateFrom,dateTo}", pathParameters)
         {
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace BunnyApiClient.Storagezone.Item.Statistics
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone/{id}/statistics{?dateFrom*,dateTo*}", rawUrl)
+        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone/{id}/statistics{?dateFrom,dateTo}", rawUrl)
         {
         }
         /// <summary>
@@ -80,7 +80,7 @@ namespace BunnyApiClient.Storagezone.Item.Statistics
         /// <summary>
         /// [GetStorageZoneStatistics API Docs](https://docs.bunny.net/reference/storagezonepublic_storagezonestatistics)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class StatisticsRequestBuilderGetQueryParameters 
         {
             [QueryParameter("dateFrom")]

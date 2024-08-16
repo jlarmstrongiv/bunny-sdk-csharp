@@ -12,7 +12,7 @@ namespace StreamApiClient.OEmbed
     /// <summary>
     /// Builds and executes requests for operations under \OEmbed
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class OEmbedRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -20,7 +20,7 @@ namespace StreamApiClient.OEmbed
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public OEmbedRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/OEmbed?expires={expires}{&maxHeight*,maxWidth*,token*,url*}", pathParameters)
+        public OEmbedRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/OEmbed?expires={expires}{&maxHeight,maxWidth,token,url}", pathParameters)
         {
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace StreamApiClient.OEmbed
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public OEmbedRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/OEmbed?expires={expires}{&maxHeight*,maxWidth*,token*,url*}", rawUrl)
+        public OEmbedRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/OEmbed?expires={expires}{&maxHeight,maxWidth,token,url}", rawUrl)
         {
         }
         /// <summary>
@@ -80,7 +80,7 @@ namespace StreamApiClient.OEmbed
         /// <summary>
         /// [OEmbed API Docs](https://docs.bunny.net/reference/oembed_getoembed)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class OEmbedRequestBuilderGetQueryParameters 
         {
             [QueryParameter("expires")]

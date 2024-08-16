@@ -12,7 +12,7 @@ namespace BunnyApiClient.Pullzone.Item.Originshield.Queuestatistics
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}\originshield\queuestatistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class QueuestatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -20,7 +20,7 @@ namespace BunnyApiClient.Pullzone.Item.Originshield.Queuestatistics
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public QueuestatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/originshield/queuestatistics{?dateFrom*,dateTo*,hourly*}", pathParameters)
+        public QueuestatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/originshield/queuestatistics{?dateFrom,dateTo,hourly}", pathParameters)
         {
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace BunnyApiClient.Pullzone.Item.Originshield.Queuestatistics
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public QueuestatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/originshield/queuestatistics{?dateFrom*,dateTo*,hourly*}", rawUrl)
+        public QueuestatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/originshield/queuestatistics{?dateFrom,dateTo,hourly}", rawUrl)
         {
         }
         /// <summary>
@@ -80,7 +80,7 @@ namespace BunnyApiClient.Pullzone.Item.Originshield.Queuestatistics
         /// <summary>
         /// [GetOriginShieldQueueStatistics API Docs](https://docs.bunny.net/reference/pullzonepublic_originshieldconcurrencystatistics)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class QueuestatisticsRequestBuilderGetQueryParameters 
         {
             /// <summary>The start date of the statistics. If no value is passed, the last 30 days will be returned.</summary>

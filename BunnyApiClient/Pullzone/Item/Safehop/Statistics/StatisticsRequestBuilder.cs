@@ -12,7 +12,7 @@ namespace BunnyApiClient.Pullzone.Item.Safehop.Statistics
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}\safehop\statistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class StatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -20,7 +20,7 @@ namespace BunnyApiClient.Pullzone.Item.Safehop.Statistics
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/safehop/statistics{?dateFrom*,dateTo*,hourly*}", pathParameters)
+        public StatisticsRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/safehop/statistics{?dateFrom,dateTo,hourly}", pathParameters)
         {
         }
         /// <summary>
@@ -28,7 +28,7 @@ namespace BunnyApiClient.Pullzone.Item.Safehop.Statistics
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/safehop/statistics{?dateFrom*,dateTo*,hourly*}", rawUrl)
+        public StatisticsRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/pullzone/{%2Did}/safehop/statistics{?dateFrom,dateTo,hourly}", rawUrl)
         {
         }
         /// <summary>
@@ -80,7 +80,7 @@ namespace BunnyApiClient.Pullzone.Item.Safehop.Statistics
         /// <summary>
         /// [GetSafeHopStatistics API Docs](https://docs.bunny.net/reference/pullzonepublic_safehopstatistics)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class StatisticsRequestBuilderGetQueryParameters 
         {
             /// <summary>The start date of the statistics. If no value is passed, the last 30 days will be returned.</summary>

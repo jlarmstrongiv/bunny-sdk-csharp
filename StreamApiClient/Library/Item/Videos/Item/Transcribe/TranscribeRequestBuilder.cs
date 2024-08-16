@@ -13,7 +13,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Transcribe
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\videos\{videoId}\transcribe
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class TranscribeRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -81,7 +81,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Transcribe
         /// <summary>
         /// [TranscribeVideo API Docs](https://docs.bunny.net/reference/video_transcribevideo)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class TranscribeRequestBuilderPostQueryParameters 
         {
             [QueryParameter("force")]

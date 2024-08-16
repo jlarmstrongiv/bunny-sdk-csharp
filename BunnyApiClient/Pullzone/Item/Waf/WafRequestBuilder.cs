@@ -11,7 +11,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}\waf
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class WafRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The statistics property</summary>

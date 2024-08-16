@@ -14,7 +14,7 @@ namespace StreamApiClient.Library.Item.Collections.Item
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\collections\{collectionId}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class WithCollectionItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -161,7 +161,7 @@ namespace StreamApiClient.Library.Item.Collections.Item
         /// <summary>
         /// [GetCollection API Docs](https://docs.bunny.net/reference/collection_getcollection)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class WithCollectionItemRequestBuilderGetQueryParameters 
         {
             [QueryParameter("includeThumbnails")]

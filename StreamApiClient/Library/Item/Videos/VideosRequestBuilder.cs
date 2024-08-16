@@ -15,7 +15,7 @@ namespace StreamApiClient.Library.Item.Videos
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\videos
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class VideosRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The fetch property</summary>
@@ -40,7 +40,7 @@ namespace StreamApiClient.Library.Item.Videos
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public VideosRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos?itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&collection*,search*}", pathParameters)
+        public VideosRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos?itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&collection,search}", pathParameters)
         {
         }
         /// <summary>
@@ -48,7 +48,7 @@ namespace StreamApiClient.Library.Item.Videos
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public VideosRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos?itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&collection*,search*}", rawUrl)
+        public VideosRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos?itemsPerPage={itemsPerPage}&orderBy={orderBy}&page={page}{&collection,search}", rawUrl)
         {
         }
         /// <summary>
@@ -142,7 +142,7 @@ namespace StreamApiClient.Library.Item.Videos
         /// <summary>
         /// [ListVideos API Docs](https://docs.bunny.net/reference/video_list)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class VideosRequestBuilderGetQueryParameters 
         {
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

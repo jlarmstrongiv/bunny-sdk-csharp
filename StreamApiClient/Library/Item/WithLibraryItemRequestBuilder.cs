@@ -13,7 +13,7 @@ namespace StreamApiClient.Library.Item
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class WithLibraryItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The collections property</summary>

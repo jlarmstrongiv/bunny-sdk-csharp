@@ -16,7 +16,7 @@ namespace BunnyApiClient.Storagezone
     /// <summary>
     /// Builds and executes requests for operations under \storagezone
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class StoragezoneRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The checkavailability property</summary>
@@ -46,7 +46,7 @@ namespace BunnyApiClient.Storagezone
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StoragezoneRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone?includeDeleted={includeDeleted}&page={page}&perPage={perPage}{&search*}", pathParameters)
+        public StoragezoneRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone?includeDeleted={includeDeleted}&page={page}&perPage={perPage}{&search}", pathParameters)
         {
         }
         /// <summary>
@@ -54,7 +54,7 @@ namespace BunnyApiClient.Storagezone
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public StoragezoneRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone?includeDeleted={includeDeleted}&page={page}&perPage={perPage}{&search*}", rawUrl)
+        public StoragezoneRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/storagezone?includeDeleted={includeDeleted}&page={page}&perPage={perPage}{&search}", rawUrl)
         {
         }
         /// <summary>
@@ -148,7 +148,7 @@ namespace BunnyApiClient.Storagezone
         /// <summary>
         /// [ListStorageZones API Docs](https://docs.bunny.net/reference/storagezonepublic_index)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class StoragezoneRequestBuilderGetQueryParameters 
         {
             [QueryParameter("includeDeleted")]

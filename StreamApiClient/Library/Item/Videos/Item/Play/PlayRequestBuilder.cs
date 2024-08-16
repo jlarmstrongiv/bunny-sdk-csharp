@@ -13,7 +13,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Play
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\videos\{videoId}\play
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
     public partial class PlayRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -21,7 +21,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Play
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public PlayRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/play{?expires*,token*}", pathParameters)
+        public PlayRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/play{?expires,token}", pathParameters)
         {
         }
         /// <summary>
@@ -29,7 +29,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Play
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public PlayRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/play{?expires*,token*}", rawUrl)
+        public PlayRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/library/{libraryId}/videos/{videoId}/play{?expires,token}", rawUrl)
         {
         }
         /// <summary>
@@ -81,7 +81,7 @@ namespace StreamApiClient.Library.Item.Videos.Item.Play
         /// <summary>
         /// [GetVideoPlayData API Docs](https://docs.bunny.net/reference/video_getvideoplaydata)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.16.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.17.0")]
         public partial class PlayRequestBuilderGetQueryParameters 
         {
             [QueryParameter("expires")]
