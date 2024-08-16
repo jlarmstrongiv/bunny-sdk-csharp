@@ -9,6 +9,7 @@
 - increment version in `bunny-sdk.csproj`
 - `dotnet clean bunny-sdk.csproj`
 - `dotnet build bunny-sdk.csproj`
+- `BUNNY_ACCESS_KEY="***" dotnet run --project test-it.csproj`
 - `dotnet pack bunny-sdk.csproj`
 - `git add -A`
 - `git commit -m "message"`
