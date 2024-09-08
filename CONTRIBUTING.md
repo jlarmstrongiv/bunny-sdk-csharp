@@ -6,6 +6,7 @@
 
 ## Updating
 
+- manually upgrade dependencies in `bunny-sdk.csproj`
 - increment version in `bunny-sdk.csproj`
 - `dotnet clean bunny-sdk.csproj`
 - `dotnet build bunny-sdk.csproj`
