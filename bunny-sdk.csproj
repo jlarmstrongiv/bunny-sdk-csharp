@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <DefaultItemExcludes>$(DefaultItemExcludes);Test.cs</DefaultItemExcludes>
     <PackageId>BunnyLauncher.BunnySdk</PackageId>
-    <Version>0.0.5</Version>
+    <Version>0.0.6</Version>
     <MinVerTagPrefix>v</MinVerTagPrefix>
     <Authors>john_l_armstrong_iv</Authors>
     <Summary>C# SDK for bunny.net 🐰</Summary>
