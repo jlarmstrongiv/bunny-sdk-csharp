@@ -35,7 +35,7 @@ namespace BunnyApiClient.Compute.Script
         /// </summary>
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public ScriptRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/compute/script?page={page}&perPage={perPage}&search={search}", pathParameters)
+        public ScriptRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/compute/script?page={page}&perPage={perPage}&search={search}{&includeLinkedPullZones}", pathParameters)
         {
         }
         /// <summary>
@@ -43,7 +43,7 @@ namespace BunnyApiClient.Compute.Script
         /// </summary>
         /// <param name="rawUrl">The raw URL to use for the request builder.</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public ScriptRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/compute/script?page={page}&perPage={perPage}&search={search}", rawUrl)
+        public ScriptRequestBuilder(string rawUrl, IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}/compute/script?page={page}&perPage={perPage}&search={search}{&includeLinkedPullZones}", rawUrl)
         {
         }
         /// <summary>
@@ -140,6 +140,8 @@ namespace BunnyApiClient.Compute.Script
         [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
         public partial class ScriptRequestBuilderGetQueryParameters 
         {
+            [QueryParameter("includeLinkedPullZones")]
+            public bool? IncludeLinkedPullZones { get; set; }
             [QueryParameter("page")]
             public int? Page { get; set; }
             [QueryParameter("perPage")]
