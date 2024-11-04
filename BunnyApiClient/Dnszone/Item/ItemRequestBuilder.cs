@@ -21,7 +21,7 @@ namespace BunnyApiClient.Dnszone.Item
     /// <summary>
     /// Builds and executes requests for operations under \dnszone\{-id}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The dismissnameservercheck property</summary>
@@ -114,16 +114,16 @@ namespace BunnyApiClient.Dnszone.Item
         /// [UpdateDnsZone API Docs](https://docs.bunny.net/reference/dnszonepublic_update)
         /// </summary>
         /// <returns>A <see cref="global::BunnyApiClient.Models.DnsZone.DnsZone"/></returns>
-        /// <param name="body">The template for adding optional properties.</param>
+        /// <param name="body">The request body</param>
         /// <param name="cancellationToken">Cancellation token to use when cancelling requests</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public async Task<global::BunnyApiClient.Models.DnsZone.DnsZone?> PostAsync(global::BunnyApiClient.Dnszone.Item.PostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::BunnyApiClient.Models.DnsZone.DnsZone?> PostAsync(global::BunnyApiClient.Models.DnsZone.DnsZoneCreate body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #nullable restore
 #else
-        public async Task<global::BunnyApiClient.Models.DnsZone.DnsZone> PostAsync(global::BunnyApiClient.Dnszone.Item.PostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
+        public async Task<global::BunnyApiClient.Models.DnsZone.DnsZone> PostAsync(global::BunnyApiClient.Models.DnsZone.DnsZoneCreate body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default, CancellationToken cancellationToken = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));
@@ -172,15 +172,15 @@ namespace BunnyApiClient.Dnszone.Item
         /// [UpdateDnsZone API Docs](https://docs.bunny.net/reference/dnszonepublic_update)
         /// </summary>
         /// <returns>A <see cref="RequestInformation"/></returns>
-        /// <param name="body">The template for adding optional properties.</param>
+        /// <param name="body">The request body</param>
         /// <param name="requestConfiguration">Configuration for the request such as headers, query parameters, and middleware options.</param>
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER
 #nullable enable
-        public RequestInformation ToPostRequestInformation(global::BunnyApiClient.Dnszone.Item.PostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::BunnyApiClient.Models.DnsZone.DnsZoneCreate body, Action<RequestConfiguration<DefaultQueryParameters>>? requestConfiguration = default)
         {
 #nullable restore
 #else
-        public RequestInformation ToPostRequestInformation(global::BunnyApiClient.Dnszone.Item.PostRequestBody body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
+        public RequestInformation ToPostRequestInformation(global::BunnyApiClient.Models.DnsZone.DnsZoneCreate body, Action<RequestConfiguration<DefaultQueryParameters>> requestConfiguration = default)
         {
 #endif
             _ = body ?? throw new ArgumentNullException(nameof(body));

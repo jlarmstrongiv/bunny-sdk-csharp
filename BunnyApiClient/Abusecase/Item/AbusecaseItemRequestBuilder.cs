@@ -16,7 +16,7 @@ namespace BunnyApiClient.Abusecase.Item
     /// <summary>
     /// Builds and executes requests for operations under \abusecase\{id}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class AbusecaseItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The check property</summary>

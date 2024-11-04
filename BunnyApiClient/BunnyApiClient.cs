@@ -7,10 +7,12 @@ using BunnyApiClient.Compute;
 using BunnyApiClient.Country;
 using BunnyApiClient.Dmca;
 using BunnyApiClient.Dnszone;
+using BunnyApiClient.Integration;
 using BunnyApiClient.Pullzone;
 using BunnyApiClient.Purge;
 using BunnyApiClient.Region;
 using BunnyApiClient.Search;
+using BunnyApiClient.Shield;
 using BunnyApiClient.Statistics;
 using BunnyApiClient.Storagezone;
 using BunnyApiClient.User;
@@ -30,7 +32,7 @@ namespace BunnyApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class BunnyApiClient : BaseRequestBuilder
     {
         /// <summary>The abusecase property</summary>
@@ -68,6 +70,11 @@ namespace BunnyApiClient
         {
             get => new global::BunnyApiClient.Dnszone.DnszoneRequestBuilder(PathParameters, RequestAdapter);
         }
+        /// <summary>The integration property</summary>
+        public global::BunnyApiClient.Integration.IntegrationRequestBuilder Integration
+        {
+            get => new global::BunnyApiClient.Integration.IntegrationRequestBuilder(PathParameters, RequestAdapter);
+        }
         /// <summary>The pullzone property</summary>
         public global::BunnyApiClient.Pullzone.PullzoneRequestBuilder Pullzone
         {
@@ -87,6 +94,11 @@ namespace BunnyApiClient
         public global::BunnyApiClient.Search.SearchRequestBuilder Search
         {
             get => new global::BunnyApiClient.Search.SearchRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The shield property</summary>
+        public global::BunnyApiClient.Shield.ShieldRequestBuilder Shield
+        {
+            get => new global::BunnyApiClient.Shield.ShieldRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>The statistics property</summary>
         public global::BunnyApiClient.Statistics.StatisticsRequestBuilder Statistics

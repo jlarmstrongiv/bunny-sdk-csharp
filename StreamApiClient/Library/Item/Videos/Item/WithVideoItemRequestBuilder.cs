@@ -23,7 +23,7 @@ namespace StreamApiClient.Library.Item.Videos.Item
     /// <summary>
     /// Builds and executes requests for operations under \library\{libraryId}\videos\{videoId}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class WithVideoItemRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The captions property</summary>
@@ -252,7 +252,7 @@ namespace StreamApiClient.Library.Item.Videos.Item
         /// <summary>
         /// [UploadVideo API Docs](https://docs.bunny.net/reference/video_uploadvideo)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class WithVideoItemRequestBuilderPutQueryParameters 
         {
 #if NETSTANDARD2_1_OR_GREATER || NETCOREAPP3_1_OR_GREATER

@@ -13,7 +13,7 @@ namespace LoggingApiClient.WithMmWithDdWithYy.WithPullZoneIdLog
     /// <summary>
     /// Builds and executes requests for operations under \{mm}-{dd}-{yy}\{pullZoneId}.log
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class WithPullZoneIdLogRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -83,7 +83,7 @@ namespace LoggingApiClient.WithMmWithDdWithYy.WithPullZoneIdLog
         /// <summary>
         /// [LoggingApi API Docs](https://docs.bunny.net/docs/cdn-logging-api)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class WithPullZoneIdLogRequestBuilderGetQueryParameters 
         {
             [QueryParameter("end")]

@@ -17,7 +17,7 @@ namespace BunnyApiClient.Dnszone
     /// <summary>
     /// Builds and executes requests for operations under \dnszone
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class DnszoneRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The checkavailability property</summary>
@@ -149,7 +149,7 @@ namespace BunnyApiClient.Dnszone
         /// <summary>
         /// [ListDnsZones API Docs](https://docs.bunny.net/reference/dnszonepublic_index)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class DnszoneRequestBuilderGetQueryParameters 
         {
             [QueryParameter("page")]

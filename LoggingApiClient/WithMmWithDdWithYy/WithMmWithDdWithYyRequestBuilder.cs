@@ -12,7 +12,7 @@ namespace LoggingApiClient.WithMmWithDdWithYy
     /// <summary>
     /// Builds and executes requests for operations under \{mm}-{dd}-{yy}
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class WithMmWithDdWithYyRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -23,11 +23,11 @@ namespace LoggingApiClient.WithMmWithDdWithYy
         /// <param name="pathParameters">Path parameters for the request</param>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
         /// <param name="yy">The path parameter: yy</param>
-        public WithMmWithDdWithYyRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter, int? dd = default, int? mm = default, int? yy = default) : base(requestAdapter, "{+baseurl}/{mm}-{dd}-{yy}", pathParameters)
+        public WithMmWithDdWithYyRequestBuilder(Dictionary<string, object> pathParameters, IRequestAdapter requestAdapter, string dd = "", string mm = "", string yy = "") : base(requestAdapter, "{+baseurl}/{mm}-{dd}-{yy}", pathParameters)
         {
-            if (dd != null) PathParameters.Add("dd", dd);
-            if (mm != null) PathParameters.Add("mm", mm);
-            if (yy != null) PathParameters.Add("yy", yy);
+            if (!string.IsNullOrWhiteSpace(dd)) PathParameters.Add("dd", dd);
+            if (!string.IsNullOrWhiteSpace(mm)) PathParameters.Add("mm", mm);
+            if (!string.IsNullOrWhiteSpace(yy)) PathParameters.Add("yy", yy);
         }
         /// <summary>
         /// Instantiates a new <see cref="global::LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder"/> and sets the default values.

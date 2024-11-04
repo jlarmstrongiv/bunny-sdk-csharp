@@ -17,7 +17,7 @@ public static class BunnySdk
   }
   public static BunnyApiClient CreateBunnyApiClient(CreateBunnyApiClientParameters options)
   {
-    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "AccessKey", ApiKeyAuthenticationProvider.KeyLocation.Header);
+    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "accesskey", ApiKeyAuthenticationProvider.KeyLocation.Header);
     var adapter = new HttpClientRequestAdapter(authProvider);
     return new BunnyApiClient(adapter);
   }
@@ -29,7 +29,7 @@ public static class BunnySdk
   }
   public static EdgeStorageApiClient CreateEdgeStorageApiClient(CreateEdgeStorageApiClientParameters options)
   {
-    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "AccessKey", ApiKeyAuthenticationProvider.KeyLocation.Header);
+    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "accesskey", ApiKeyAuthenticationProvider.KeyLocation.Header);
     var adapter = new HttpClientRequestAdapter(authProvider)
     {
       BaseUrl = options.BaseUrl,
@@ -43,7 +43,7 @@ public static class BunnySdk
   }
   public static LoggingApiClient CreateLoggingApiClient(CreateLoggingApiClientParameters options)
   {
-    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "AccessKey", ApiKeyAuthenticationProvider.KeyLocation.Header);
+    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "accesskey", ApiKeyAuthenticationProvider.KeyLocation.Header);
     var adapter = new HttpClientRequestAdapter(authProvider);
     return new LoggingApiClient(adapter);
   }
@@ -54,7 +54,7 @@ public static class BunnySdk
   }
   public static StreamApiClient CreateStreamApiClient(CreateStreamApiClientParameters options)
   {
-    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "AccessKey", ApiKeyAuthenticationProvider.KeyLocation.Header);
+    var authProvider = new ApiKeyAuthenticationProvider(options.AccessKey, "accesskey", ApiKeyAuthenticationProvider.KeyLocation.Header);
     var adapter = new HttpClientRequestAdapter(authProvider);
     return new StreamApiClient(adapter);
   }

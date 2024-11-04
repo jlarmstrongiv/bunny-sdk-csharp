@@ -4,6 +4,8 @@ using BunnyApiClient.Models.PullZone;
 using BunnyApiClient.Pullzone.Checkavailability;
 using BunnyApiClient.Pullzone.Item;
 using BunnyApiClient.Pullzone.LoadFreeCertificate;
+using BunnyApiClient.Pullzone.SetZoneSecurityEnabled;
+using BunnyApiClient.Pullzone.SetZoneSecurityIncludeHashRemoteIPEnabled;
 using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using Microsoft.Kiota.Abstractions;
@@ -17,7 +19,7 @@ namespace BunnyApiClient.Pullzone
     /// <summary>
     /// Builds and executes requests for operations under \pullzone
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class PullzoneRequestBuilder : BaseRequestBuilder
     {
         /// <summary>The checkavailability property</summary>
@@ -29,6 +31,16 @@ namespace BunnyApiClient.Pullzone
         public global::BunnyApiClient.Pullzone.LoadFreeCertificate.LoadFreeCertificateRequestBuilder LoadFreeCertificate
         {
             get => new global::BunnyApiClient.Pullzone.LoadFreeCertificate.LoadFreeCertificateRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The setZoneSecurityEnabled property</summary>
+        public global::BunnyApiClient.Pullzone.SetZoneSecurityEnabled.SetZoneSecurityEnabledRequestBuilder SetZoneSecurityEnabled
+        {
+            get => new global::BunnyApiClient.Pullzone.SetZoneSecurityEnabled.SetZoneSecurityEnabledRequestBuilder(PathParameters, RequestAdapter);
+        }
+        /// <summary>The setZoneSecurityIncludeHashRemoteIPEnabled property</summary>
+        public global::BunnyApiClient.Pullzone.SetZoneSecurityIncludeHashRemoteIPEnabled.SetZoneSecurityIncludeHashRemoteIPEnabledRequestBuilder SetZoneSecurityIncludeHashRemoteIPEnabled
+        {
+            get => new global::BunnyApiClient.Pullzone.SetZoneSecurityIncludeHashRemoteIPEnabled.SetZoneSecurityIncludeHashRemoteIPEnabledRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>Gets an item from the BunnyApiClient.pullzone.item collection</summary>
         /// <param name="position">The ID of the Pull Zone that should be returned</param>
@@ -149,7 +161,7 @@ namespace BunnyApiClient.Pullzone
         /// <summary>
         /// [ListPullZones API Docs](https://docs.bunny.net/reference/pullzonepublic_index)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class PullzoneRequestBuilderGetQueryParameters 
         {
             /// <summary>Determines if the result hostnames should contain the SSL certificate</summary>

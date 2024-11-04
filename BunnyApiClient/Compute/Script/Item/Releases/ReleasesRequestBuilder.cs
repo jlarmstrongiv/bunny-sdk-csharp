@@ -13,7 +13,7 @@ namespace BunnyApiClient.Compute.Script.Item.Releases
     /// <summary>
     /// Builds and executes requests for operations under \compute\script\{id}\releases
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class ReleasesRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -81,7 +81,7 @@ namespace BunnyApiClient.Compute.Script.Item.Releases
         /// <summary>
         /// [ListComputeScriptReleases API Docs](https://docs.bunny.net/reference/computeedgescriptpublic_getreleases)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class ReleasesRequestBuilderGetQueryParameters 
         {
             [QueryParameter("page")]

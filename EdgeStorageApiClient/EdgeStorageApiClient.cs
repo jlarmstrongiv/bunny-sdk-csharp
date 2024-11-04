@@ -16,11 +16,11 @@ namespace EdgeStorageApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class EdgeStorageApiClient : BaseRequestBuilder
     {
         /// <summary>Gets an item from the EdgeStorageApiClient.item collection</summary>
-        /// <param name="position">The name of your storage zone where you are connecting to.</param>
+        /// <param name="position">the name of your storage zone where you are connecting to.</param>
         /// <returns>A <see cref="global::EdgeStorageApiClient.Item.WithStorageZoneNameItemRequestBuilder"/></returns>
         public global::EdgeStorageApiClient.Item.WithStorageZoneNameItemRequestBuilder this[string position]
         {
@@ -49,6 +49,16 @@ namespace EdgeStorageApiClient
                 RequestAdapter.BaseUrl = "https://{region}.bunnycdn.com";
             }
             PathParameters.TryAdd("baseurl", RequestAdapter.BaseUrl);
+        }
+        /// <summary>
+        /// Builds and executes requests for operations under \{storageZoneName}\
+        /// </summary>
+        /// <returns>A <see cref="global::EdgeStorageApiClient.Item.WithStorageZoneNameSlashRequestBuilder"/></returns>
+        /// <param name="storageZoneName">The name of your storage zone where you are connecting to.</param>
+        public global::EdgeStorageApiClient.Item.WithStorageZoneNameSlashRequestBuilder WithStorageZoneNameSlash(string storageZoneName)
+        {
+            if(string.IsNullOrEmpty(storageZoneName)) throw new ArgumentNullException(nameof(storageZoneName));
+            return new global::EdgeStorageApiClient.Item.WithStorageZoneNameSlashRequestBuilder(PathParameters, RequestAdapter, storageZoneName);
         }
     }
 }

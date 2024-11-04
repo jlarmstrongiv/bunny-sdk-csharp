@@ -13,7 +13,7 @@ namespace BunnyApiClient.Purge
     /// <summary>
     /// Builds and executes requests for operations under \purge
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class PurgeRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -116,7 +116,7 @@ namespace BunnyApiClient.Purge
         /// <summary>
         /// [PurgeUrlGet API Docs](https://docs.bunny.net/reference/purgepublic_index)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class PurgeRequestBuilderGetQueryParameters 
         {
             [QueryParameter("async")]
@@ -152,7 +152,7 @@ namespace BunnyApiClient.Purge
         /// <summary>
         /// [PurgeUrlPost API Docs](https://docs.bunny.net/reference/purgepublic_indexpost)
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         public partial class PurgeRequestBuilderPostQueryParameters 
         {
             [QueryParameter("async")]

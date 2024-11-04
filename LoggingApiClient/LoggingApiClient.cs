@@ -16,7 +16,7 @@ namespace LoggingApiClient
     /// <summary>
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class LoggingApiClient : BaseRequestBuilder
     {
         /// <summary>
@@ -45,11 +45,11 @@ namespace LoggingApiClient
         /// <param name="dd">The path parameter: dd</param>
         /// <param name="mm">The path parameter: mm</param>
         /// <param name="yy">The path parameter: yy</param>
-        public global::LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder WithMmWithDdWithYy(int? dd, int? mm, int? yy)
+        public global::LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder WithMmWithDdWithYy(string dd, string mm, string yy)
         {
-            _ = dd ?? throw new ArgumentNullException(nameof(dd));
-            _ = mm ?? throw new ArgumentNullException(nameof(mm));
-            _ = yy ?? throw new ArgumentNullException(nameof(yy));
+            if(string.IsNullOrEmpty(dd)) throw new ArgumentNullException(nameof(dd));
+            if(string.IsNullOrEmpty(mm)) throw new ArgumentNullException(nameof(mm));
+            if(string.IsNullOrEmpty(yy)) throw new ArgumentNullException(nameof(yy));
             return new global::LoggingApiClient.WithMmWithDdWithYy.WithMmWithDdWithYyRequestBuilder(PathParameters, RequestAdapter, dd, mm, yy);
         }
     }

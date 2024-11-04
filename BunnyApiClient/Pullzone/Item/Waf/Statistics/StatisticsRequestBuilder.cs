@@ -13,7 +13,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
     /// <summary>
     /// Builds and executes requests for operations under \pullzone\{-id}\waf\statistics
     /// </summary>
-    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+    [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
     public partial class StatisticsRequestBuilder : BaseRequestBuilder
     {
         /// <summary>
@@ -72,7 +72,7 @@ namespace BunnyApiClient.Pullzone.Item.Waf.Statistics
         {
             return new global::BunnyApiClient.Pullzone.Item.Waf.Statistics.StatisticsRequestBuilder(rawUrl, RequestAdapter);
         }
-        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.18.0")]
+        [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
         #pragma warning disable CS1591
         public partial class StatisticsRequestBuilderGetQueryParameters 
         #pragma warning restore CS1591
